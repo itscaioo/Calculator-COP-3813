@@ -33,6 +33,9 @@ function calculateResult() {
         case '/':
             result = prev / current;
             break;
+        case '^':
+            result = Math.pow(prev, current);
+            break;
         default:
             return;
     }
@@ -51,4 +54,22 @@ function clearResult() {
 
 function updateDisplay() {
     document.getElementById('result').value = currentInput;
+}
+
+function calculateSquareRoot() {
+    if (currentInput === '') return;
+    currentInput = Math.sqrt(parseFloat(currentInput));
+    updateDisplay();
+}
+
+function calculateSine() {
+    if (currentInput === '') return;
+    currentInput = Math.sin(parseFloat(currentInput));
+    updateDisplay();
+}
+
+function calculateCosine() {
+    if (currentInput === '') return;
+    currentInput = Math.cos(parseFloat(currentInput));
+    updateDisplay();
 }
