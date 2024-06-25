@@ -1,5 +1,8 @@
 body {
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .card {
@@ -23,3 +26,9 @@ button {
     font-size: 24px;
     text-align: right;
 }
+
+.footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+}
+
