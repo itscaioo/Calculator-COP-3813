@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Calculator</h3>
+                        <div class="form-group">
+                            <input type="text" id="result" class="form-control" readonly>
+                        </div>
+                        <div class="button-grid">
+                            <button class="btn btn-secondary" onclick="appendNumber('7')">7</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('8')">8</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('9')">9</button>
+                            <button class="btn btn-secondary" onclick="setOperation('/')">/</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('4')">4</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('5')">5</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('6')">6</button>
+                            <button class="btn btn-secondary" onclick="setOperation('*')">*</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('1')">1</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('2')">2</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('3')">3</button>
+                            <button class="btn btn-secondary" onclick="setOperation('-')">-</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('0')">0</button>
+                            <button class="btn btn-secondary" onclick="appendNumber('.')">.</button>
+                            <button class="btn btn-secondary" onclick="calculateResult()">=</button>
+                            <button class="btn btn-secondary" onclick="setOperation('+')">+</button>
+                        </div>
+                        <button class="btn btn-danger btn-block mt-2" onclick="clearResult()">C</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
